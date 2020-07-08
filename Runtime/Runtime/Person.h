@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSInteger, PersonTypes) {
+    PersonTypeOne       = 1 << 0,
+    PersonTypeTwo       = 1 << 1,
+    PersonTypeThree     = 1 << 2,
+    PersonTypeFour      = 1 << 3
+};
 
 @interface Person : NSObject
 
@@ -19,6 +25,8 @@
 
 - (void)setHand:(BOOL)hand;
 - (BOOL)hand;
+
+- (void)setOptions:(PersonTypes)options;
 
 @end
 

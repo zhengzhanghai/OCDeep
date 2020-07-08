@@ -63,4 +63,19 @@
     return !!(_features.bits & HAND_MASK);
 }
 
+- (void)setOptions:(PersonTypes)options {
+    
+    if (options & PersonTypeOne) {
+        NSLog(@"PersonTypeOne");
+    }
+    if (options & PersonTypeTwo) {
+        NSLog(@"PersonTypeTwo");
+    }
+    if (options & PersonTypeThree) {
+        NSLog(@"PersonTypeThree");
+    }
+    if (options & PersonTypeFour) {
+        NSLog(@"PersonTypeFour");
+    }
+}
 @end
