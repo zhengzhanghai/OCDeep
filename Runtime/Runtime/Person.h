@@ -28,5 +28,7 @@ typedef NS_ENUM(NSInteger, PersonTypes) {
 
 - (void)setOptions:(PersonTypes)options;
 
+- (void)abcd;
+
 @end
 

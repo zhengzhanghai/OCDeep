@@ -21,8 +21,11 @@ int main(int argc, const char * argv[]) {
 //        NSLog(@"--    %d  %d  %d", person.height, person.tail, person.hand);
 //
 //                4 2 1  1 0 0
-        PersonTypes types = PersonTypeOne | PersonTypeThree | PersonTypeFour;
-        [[[Person alloc] init] setOptions:types];
+//        PersonTypes types = PersonTypeOne | PersonTypeThree | PersonTypeFour;
+//        [[[Person alloc] init] setOptions:types];
+        
+//        NSLog(@"%s", @encode(int));
+        
     }
     return 0;
 }
