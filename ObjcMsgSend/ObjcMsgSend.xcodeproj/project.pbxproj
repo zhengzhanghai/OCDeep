@@ -10,6 +10,7 @@
 		AD3EA14624B70D56008BECCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3EA14524B70D56008BECCC /* main.m */; };
 		AD3EA14E24B70D6A008BECCC /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3EA14D24B70D6A008BECCC /* Person.m */; };
 		AD3EA15124B725BA008BECCC /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3EA15024B725BA008BECCC /* Cat.m */; };
+		AD3EA15424B84447008BECCC /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3EA15324B84447008BECCC /* Dog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,9 @@
 		AD3EA14D24B70D6A008BECCC /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		AD3EA14F24B725BA008BECCC /* Cat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
 		AD3EA15024B725BA008BECCC /* Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
+		AD3EA15224B84447008BECCC /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		AD3EA15324B84447008BECCC /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		AD3EA15524B84501008BECCC /* Dog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Dog.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,9 @@
 				AD3EA14D24B70D6A008BECCC /* Person.m */,
 				AD3EA14F24B725BA008BECCC /* Cat.h */,
 				AD3EA15024B725BA008BECCC /* Cat.m */,
+				AD3EA15224B84447008BECCC /* Dog.h */,
+				AD3EA15324B84447008BECCC /* Dog.m */,
+				AD3EA15524B84501008BECCC /* Dog.cpp */,
 			);
 			path = ObjcMsgSend;
 			sourceTree = "<group>";
@@ -131,6 +138,7 @@
 			files = (
 				AD3EA15124B725BA008BECCC /* Cat.m in Sources */,
 				AD3EA14E24B70D6A008BECCC /* Person.m in Sources */,
+				AD3EA15424B84447008BECCC /* Dog.m in Sources */,
 				AD3EA14624B70D56008BECCC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

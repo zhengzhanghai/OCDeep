@@ -30,7 +30,7 @@ int fillTest(id self, SEL _cmd, int a) {
 //                        method_getImplementation(method),
 //                        method_getTypeEncoding(method));
         
-        class_addMethod(self, sel, (IMP)fillTest, "i@:i");
+//        class_addMethod(self, sel, (IMP)fillTest, "i@:i");
         
     }
     
@@ -44,7 +44,43 @@ int fillTest(id self, SEL _cmd, int a) {
 
 - (id)forwardingTargetForSelector:(SEL)aSelector {
     NSLog(@"forwardingTargetForSelector");
-    return [[Cat alloc] init];
+//    return [[Cat alloc] init];
+    return nil;
+}
+
+- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
+    NSLog(@"methodSignatureForSelector");
+    return [NSMethodSignature signatureWithObjCTypes:"i20@0:8i16"];
+}
+
+- (void)forwardInvocation:(NSInvocation *)anInvocation {
+    
+    int ddd;
+    [anInvocation getArgument:&ddd atIndex:2];
+    NSLog(@"%d", ddd);
+    ddd = 66;
+    [anInvocation setArgument:&ddd atIndex:2];
+    int reV ;
+    [anInvocation invokeWithTarget:[[Cat alloc] init]];
+    [anInvocation setReturnValue:&ddd];
+    NSLog(@"forwardInvocation");
+    [anInvocation getReturnValue:&reV];
+    
+    NSLog(@"--- %d", reV);
+}
+
++ (id)forwardingTargetForSelector:(SEL)aSelector {
+//    return [Cat class];
+    return nil;
+}
+
++ (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
+    
+    return [[Cat class] methodSignatureForSelector:@selector(classM)];
+}
+
++ (void)forwardInvocation:(NSInvocation *)anInvocation {
+    NSLog(@"0000000");
 }
 
 @end

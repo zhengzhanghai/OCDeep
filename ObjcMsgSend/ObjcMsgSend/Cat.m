@@ -14,4 +14,11 @@
     NSLog(@"Cat abcd");
 }
 
+- (int)test1:(int)a {
+    return a * 10;
+}
+
++ (void)classM {
+    NSLog(@"Cat ClassM");
+}
 @end
