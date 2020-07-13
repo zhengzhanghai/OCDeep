@@ -30,5 +30,7 @@ typedef NS_ENUM(NSInteger, PersonTypes) {
 
 - (void)abcd;
 
+- (void)run;
+
 @end
 

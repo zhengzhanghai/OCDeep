@@ -78,4 +78,8 @@
         NSLog(@"PersonTypeFour");
     }
 }
+
+- (void)run {
+    NSLog(@"Person run");
+}
 @end

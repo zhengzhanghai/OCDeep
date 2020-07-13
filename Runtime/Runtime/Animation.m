@@ -10,4 +10,8 @@
 
 @implementation Animation
 
+- (void)run {
+    NSLog(@"Animation run");
+}
+
 @end

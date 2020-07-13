@@ -18,13 +18,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    NSObject *ob = [[NSObject alloc] init];
+//    Person *ob = [[Person alloc] init];
+//    ob.name = @"55555";
+    
+//    NSString *dddd = @"ooooo";
     
     id cls = [Person class];
-    
     void *obj = &cls;
     [(__bridge id)obj print];
     
+//    Person *person = [[Person alloc] init];
+//    [person print];
+    
+//    obj -->  cls -->  [Person class]
+//    person ->  对象 isa  -->   [Person class]
+    
+//    obj
+//    cls
+//    ob
     
 }
 
