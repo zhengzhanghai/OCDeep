@@ -18,14 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    NSObject *ob = [[NSObject alloc] init];
+    NSLog(@"%p  %p", [NSRunLoop currentRunLoop], [NSRunLoop mainRunLoop]);
     
-    id cls = [Person class];
-    
-    void *obj = &cls;
-    [(__bridge id)obj print];
-    
-    
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSLog(@"");
 }
 
 
