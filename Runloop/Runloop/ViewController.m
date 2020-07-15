@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "ZHThread.h"
+#import "FirstViewController.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) ZHThread *thread;
 
 @end
 
@@ -54,16 +58,40 @@ void observeRunloopActivities(CFRunLoopObserverRef observer, CFRunLoopActivity a
 //    };
 }
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    _thread = [[ZHThread alloc] initWithTarget:self selector:@selector(keepLiveThread) object:nil];
+    [_thread start];
+}
 
-   
-    CFRunLoopObserverRef observer = CFRunLoopObserverCreate(kCFAllocatorDefault, kCFRunLoopAllActivities, true, 0, observeRunloopActivities, NULL);
-    CFRunLoopAddObserver(CFRunLoopGetMain(), observer, kCFRunLoopCommonModes);
-    CFRelease(observer);
+- (void)keepLiveThread {
+    NSLog(@"%@", [NSThread currentThread]);
+    
+    [[NSRunLoop currentRunLoop] addPort:[[NSPort alloc] init] forMode:NSDefaultRunLoopMode];
+    [[NSRunLoop currentRunLoop] run];
+    
+    NSLog(@"end  ednd ----");
+}
+
+- (void)runThreadAction {
+    NSLog(@"-- %@", [NSThread currentThread]);
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//    [self performSelector:@selector(runThreadAction) onThread:self.thread withObject:nil waitUntilDone:false];
+    
+    [self presentViewController:[[FirstViewController alloc] init] animated:true completion:nil];
+}
+
+- (void)test {
+    CFRunLoopObserverRef observer = CFRunLoopObserverCreate(kCFAllocatorDefault, kCFRunLoopAllActivities, true, 0, observeRunloopActivities, NULL);
+    CFRunLoopAddObserver(CFRunLoopGetMain(), observer, kCFRunLoopCommonModes);
+    CFRelease(observer);
+    
+    
     [NSTimer scheduledTimerWithTimeInterval:5 repeats:true block:^(NSTimer * _Nonnull timer) {
         NSLog(@"-------");
     }];

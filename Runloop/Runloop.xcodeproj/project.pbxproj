@@ -14,6 +14,8 @@
 		AD3EA3D324BC5CCF008BECCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD3EA3D224BC5CCF008BECCC /* Assets.xcassets */; };
 		AD3EA3D624BC5CCF008BECCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD3EA3D424BC5CCF008BECCC /* LaunchScreen.storyboard */; };
 		AD3EA3D924BC5CCF008BECCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3EA3D824BC5CCF008BECCC /* main.m */; };
+		AD3EA3E124BDA097008BECCC /* ZHThread.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3EA3E024BDA097008BECCC /* ZHThread.m */; };
+		AD3EA3E424BDA65A008BECCC /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3EA3E324BDA65A008BECCC /* FirstViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		AD3EA3D524BC5CCF008BECCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD3EA3D724BC5CCF008BECCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD3EA3D824BC5CCF008BECCC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD3EA3DF24BDA097008BECCC /* ZHThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHThread.h; sourceTree = "<group>"; };
+		AD3EA3E024BDA097008BECCC /* ZHThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHThread.m; sourceTree = "<group>"; };
+		AD3EA3E224BDA65A008BECCC /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		AD3EA3E324BDA65A008BECCC /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,10 @@
 				AD3EA3CA24BC5CCE008BECCC /* SceneDelegate.m */,
 				AD3EA3CC24BC5CCE008BECCC /* ViewController.h */,
 				AD3EA3CD24BC5CCE008BECCC /* ViewController.m */,
+				AD3EA3E224BDA65A008BECCC /* FirstViewController.h */,
+				AD3EA3E324BDA65A008BECCC /* FirstViewController.m */,
+				AD3EA3DF24BDA097008BECCC /* ZHThread.h */,
+				AD3EA3E024BDA097008BECCC /* ZHThread.m */,
 				AD3EA3CF24BC5CCE008BECCC /* Main.storyboard */,
 				AD3EA3D224BC5CCF008BECCC /* Assets.xcassets */,
 				AD3EA3D424BC5CCF008BECCC /* LaunchScreen.storyboard */,
@@ -147,7 +157,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD3EA3CE24BC5CCE008BECCC /* ViewController.m in Sources */,
+				AD3EA3E424BDA65A008BECCC /* FirstViewController.m in Sources */,
 				AD3EA3C824BC5CCE008BECCC /* AppDelegate.m in Sources */,
+				AD3EA3E124BDA097008BECCC /* ZHThread.m in Sources */,
 				AD3EA3D924BC5CCF008BECCC /* main.m in Sources */,
 				AD3EA3CB24BC5CCE008BECCC /* SceneDelegate.m in Sources */,
 			);
