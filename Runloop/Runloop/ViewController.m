@@ -65,6 +65,14 @@ void observeRunloopActivities(CFRunLoopObserverRef observer, CFRunLoopActivity a
     
     _thread = [[ZHThread alloc] initWithTarget:self selector:@selector(keepLiveThread) object:nil];
     [_thread start];
+    
+    
+    [self performSelector:@selector(dddd) onThread:_thread withObject:nil waitUntilDone:true ];
+    NSLog(@"0000000000");
+}
+
+- (void)dddd {
+    NSLog(@"---------------");
 }
 
 - (void)keepLiveThread {
