@@ -14,6 +14,10 @@
 		AD3EA59124C04533008BECCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD3EA59024C04533008BECCC /* Assets.xcassets */; };
 		AD3EA59424C04533008BECCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD3EA59224C04533008BECCC /* LaunchScreen.storyboard */; };
 		AD3EA59724C04533008BECCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD3EA59624C04533008BECCC /* main.m */; };
+		AD40D93C24C1A29F007EEAFF /* LockBaseDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD40D93B24C1A29F007EEAFF /* LockBaseDemo.m */; };
+		AD40D93F24C1A3C5007EEAFF /* OSSpinLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD40D93E24C1A3C5007EEAFF /* OSSpinLockDemo.m */; };
+		AD40D94424C1AA70007EEAFF /* OSUnfairLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD40D94324C1AA70007EEAFF /* OSUnfairLockDemo.m */; };
+		AD40D94724C1B0C4007EEAFF /* PthreadMutexLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD40D94624C1B0C4007EEAFF /* PthreadMutexLockDemo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,16 @@
 		AD3EA59324C04533008BECCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD3EA59524C04533008BECCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD3EA59624C04533008BECCC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD40D93A24C1A29F007EEAFF /* LockBaseDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockBaseDemo.h; sourceTree = "<group>"; };
+		AD40D93B24C1A29F007EEAFF /* LockBaseDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockBaseDemo.m; sourceTree = "<group>"; };
+		AD40D93D24C1A3C5007EEAFF /* OSSpinLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSSpinLockDemo.h; sourceTree = "<group>"; };
+		AD40D93E24C1A3C5007EEAFF /* OSSpinLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSSpinLockDemo.m; sourceTree = "<group>"; };
+		AD40D94024C1A781007EEAFF /* ViewController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ViewController.cpp; sourceTree = "<group>"; };
+		AD40D94124C1A792007EEAFF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		AD40D94224C1AA70007EEAFF /* OSUnfairLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSUnfairLockDemo.h; sourceTree = "<group>"; };
+		AD40D94324C1AA70007EEAFF /* OSUnfairLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSUnfairLockDemo.m; sourceTree = "<group>"; };
+		AD40D94524C1B0C4007EEAFF /* PthreadMutexLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PthreadMutexLockDemo.h; sourceTree = "<group>"; };
+		AD40D94624C1B0C4007EEAFF /* PthreadMutexLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PthreadMutexLockDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +75,22 @@
 		AD3EA58324C04531008BECCC /* Thread */ = {
 			isa = PBXGroup;
 			children = (
+				AD40D94124C1A792007EEAFF /* main.cpp */,
+				AD40D94024C1A781007EEAFF /* ViewController.cpp */,
 				AD3EA58424C04531008BECCC /* AppDelegate.h */,
 				AD3EA58524C04531008BECCC /* AppDelegate.m */,
 				AD3EA58724C04531008BECCC /* SceneDelegate.h */,
 				AD3EA58824C04531008BECCC /* SceneDelegate.m */,
 				AD3EA58A24C04531008BECCC /* ViewController.h */,
 				AD3EA58B24C04531008BECCC /* ViewController.m */,
+				AD40D93A24C1A29F007EEAFF /* LockBaseDemo.h */,
+				AD40D93B24C1A29F007EEAFF /* LockBaseDemo.m */,
+				AD40D93D24C1A3C5007EEAFF /* OSSpinLockDemo.h */,
+				AD40D93E24C1A3C5007EEAFF /* OSSpinLockDemo.m */,
+				AD40D94224C1AA70007EEAFF /* OSUnfairLockDemo.h */,
+				AD40D94324C1AA70007EEAFF /* OSUnfairLockDemo.m */,
+				AD40D94524C1B0C4007EEAFF /* PthreadMutexLockDemo.h */,
+				AD40D94624C1B0C4007EEAFF /* PthreadMutexLockDemo.m */,
 				AD3EA58D24C04531008BECCC /* Main.storyboard */,
 				AD3EA59024C04533008BECCC /* Assets.xcassets */,
 				AD3EA59224C04533008BECCC /* LaunchScreen.storyboard */,
@@ -146,10 +170,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD40D94424C1AA70007EEAFF /* OSUnfairLockDemo.m in Sources */,
 				AD3EA58C24C04531008BECCC /* ViewController.m in Sources */,
+				AD40D94724C1B0C4007EEAFF /* PthreadMutexLockDemo.m in Sources */,
+				AD40D93C24C1A29F007EEAFF /* LockBaseDemo.m in Sources */,
 				AD3EA58624C04531008BECCC /* AppDelegate.m in Sources */,
 				AD3EA59724C04533008BECCC /* main.m in Sources */,
 				AD3EA58924C04531008BECCC /* SceneDelegate.m in Sources */,
+				AD40D93F24C1A3C5007EEAFF /* OSSpinLockDemo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
