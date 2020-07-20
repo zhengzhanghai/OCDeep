@@ -25,6 +25,10 @@
 		ADBB7C0924C3DC2700035D4F /* SerialQueueDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBB7C0824C3DC2700035D4F /* SerialQueueDemo.m */; };
 		ADBB7C0C24C3DED800035D4F /* DispatchSemaphoreDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBB7C0B24C3DED800035D4F /* DispatchSemaphoreDemo.m */; };
 		ADBB7C0F24C3E36A00035D4F /* SynchronizedDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBB7C0E24C3E36A00035D4F /* SynchronizedDemo.m */; };
+		AD4FD08724C53CEC00D9A809 /* SynchronizeDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4FD08624C53CEC00D9A809 /* SynchronizeDemo.m */; };
+		AD4FD08A24C5421000D9A809 /* AtomicDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4FD08924C5421000D9A809 /* AtomicDemo.m */; };
+		AD4FD08D24C54AC900D9A809 /* PthreadRwlockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4FD08C24C54AC900D9A809 /* PthreadRwlockDemo.m */; };
+		AD4FD09024C54FAF00D9A809 /* DispatchBarrierDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4FD08F24C54FAF00D9A809 /* DispatchBarrierDemo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +68,14 @@
 		ADBB7C0B24C3DED800035D4F /* DispatchSemaphoreDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchSemaphoreDemo.m; sourceTree = "<group>"; };
 		ADBB7C0D24C3E36A00035D4F /* SynchronizedDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynchronizedDemo.h; sourceTree = "<group>"; };
 		ADBB7C0E24C3E36A00035D4F /* SynchronizedDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SynchronizedDemo.m; sourceTree = "<group>"; };
+		AD4FD08524C53CEC00D9A809 /* SynchronizeDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynchronizeDemo.h; sourceTree = "<group>"; };
+		AD4FD08624C53CEC00D9A809 /* SynchronizeDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SynchronizeDemo.m; sourceTree = "<group>"; };
+		AD4FD08824C5421000D9A809 /* AtomicDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AtomicDemo.h; sourceTree = "<group>"; };
+		AD4FD08924C5421000D9A809 /* AtomicDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AtomicDemo.m; sourceTree = "<group>"; };
+		AD4FD08B24C54AC900D9A809 /* PthreadRwlockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PthreadRwlockDemo.h; sourceTree = "<group>"; };
+		AD4FD08C24C54AC900D9A809 /* PthreadRwlockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PthreadRwlockDemo.m; sourceTree = "<group>"; };
+		AD4FD08E24C54FAF00D9A809 /* DispatchBarrierDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchBarrierDemo.h; sourceTree = "<group>"; };
+		AD4FD08F24C54FAF00D9A809 /* DispatchBarrierDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchBarrierDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +138,14 @@
 				ADBB7C0B24C3DED800035D4F /* DispatchSemaphoreDemo.m */,
 				ADBB7C0D24C3E36A00035D4F /* SynchronizedDemo.h */,
 				ADBB7C0E24C3E36A00035D4F /* SynchronizedDemo.m */,
+				AD4FD08524C53CEC00D9A809 /* SynchronizeDemo.h */,
+				AD4FD08624C53CEC00D9A809 /* SynchronizeDemo.m */,
+				AD4FD08824C5421000D9A809 /* AtomicDemo.h */,
+				AD4FD08924C5421000D9A809 /* AtomicDemo.m */,
+				AD4FD08B24C54AC900D9A809 /* PthreadRwlockDemo.h */,
+				AD4FD08C24C54AC900D9A809 /* PthreadRwlockDemo.m */,
+				AD4FD08E24C54FAF00D9A809 /* DispatchBarrierDemo.h */,
+				AD4FD08F24C54FAF00D9A809 /* DispatchBarrierDemo.m */,
 				AD3EA58D24C04531008BECCC /* Main.storyboard */,
 				AD3EA59024C04533008BECCC /* Assets.xcassets */,
 				AD3EA59224C04533008BECCC /* LaunchScreen.storyboard */,
@@ -206,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADBB7BFD24C26E4F00035D4F /* PthreadMutexLockDemo2.m in Sources */,
+				AD4FD09024C54FAF00D9A809 /* DispatchBarrierDemo.m in Sources */,
 				AD40D94424C1AA70007EEAFF /* OSUnfairLockDemo.m in Sources */,
 				AD3EA58C24C04531008BECCC /* ViewController.m in Sources */,
 				ADBB7C0924C3DC2700035D4F /* SerialQueueDemo.m in Sources */,
@@ -215,11 +236,14 @@
 				AD40D93C24C1A29F007EEAFF /* LockBaseDemo.m in Sources */,
 				ADBB7C0624C2F14100035D4F /* NSLockDemo.m in Sources */,
 				AD3EA58624C04531008BECCC /* AppDelegate.m in Sources */,
+				AD4FD08D24C54AC900D9A809 /* PthreadRwlockDemo.m in Sources */,
 				AD3EA59724C04533008BECCC /* main.m in Sources */,
 				ADBB7C0324C2F03F00035D4F /* NSConditionLockDemo.m in Sources */,
 				ADBB7C0C24C3DED800035D4F /* DispatchSemaphoreDemo.m in Sources */,
 				AD3EA58924C04531008BECCC /* SceneDelegate.m in Sources */,
+				AD4FD08724C53CEC00D9A809 /* SynchronizeDemo.m in Sources */,
 				AD40D93F24C1A3C5007EEAFF /* OSSpinLockDemo.m in Sources */,
+				AD4FD08A24C5421000D9A809 /* AtomicDemo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,9 +16,14 @@
 #import "NSConditionLockDemo.h"
 #import "SerialQueueDemo.h"
 #import "DispatchSemaphoreDemo.h"
+#import "SynchronizeDemo.h"
+#import "PthreadRwlockDemo.h"
+#import "PthreadRwlockDemo.h"
+#import "DispatchBarrierDemo.h"
 
 @interface ViewController ()
-
+@property (nonatomic, strong) PthreadRwlockDemo *rwDemo;
+@property (nonatomic, strong) DispatchBarrierDemo *barrierDemo;
 @end
 
 @implementation ViewController
@@ -43,6 +48,14 @@
 //    [NSConditionLockDemo lockTest];
 //    [SerialQueueDemo lockTest];
     [DispatchSemaphoreDemo lockTest];
+//    [SynchronizeDemo lockTest];
+//    [PthreadRwlockDemo test];
+    
+//    _rwDemo = [[PthreadRwlockDemo alloc] init];
+//    [_rwDemo test];
+    
+    _barrierDemo = [[DispatchBarrierDemo alloc] init];
+    [_barrierDemo test];
 }
 
 @end
