@@ -37,17 +37,39 @@
     
     for (int i = 0; i < 100; i++) {
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
-//            self.name = [NSString stringWithFormat:@"abcdefghijk"];
+            self.name = [NSString stringWithFormat:@"abcdefghijk"];
             self.name = @"abcdefghijk";
-
+            self.name = [NSString stringWithFormat:@"oooooooooooo"];
         });
     }
     
+//
+//    NSLog(@"\n%p\n%p\n%p\n%p\n%p\n%p\n%p",
+//          @"abc",
+//          @"sdkjfhsakdjfhasdkjflasdfgdsfgdsafgafkdhjsghaj",
+//          @"abcdefghijk",
+//          [NSString stringWithFormat:@"abcd"],
+//          [NSString stringWithFormat:@"abcsjdkfhkssdfkhjsdhfkj"],
+//          [NSString stringWithFormat:@"kjsdgjgasdfoewiuskjdkjgsjhgkjhgsdkjfhgsdkjfsdfhjkg"],
+//          @"kjsdgjgasdfoewiuskjdkjgsjhgkjhgsdkjfhgsdkjfsdfhjkg");
+//
+//    NSLog(@"-------------------------------------");
+//
+//    NSString *str = [NSString stringWithFormat:@"kjsdgjgasdfoewiuskjdkjgsjhgkjhgsdkjfhgsdkjfsdfhjkg"];
+//    NSLog(@"%p", [str UTF8String]);
+//
+//    NSLog(@"\n%p\n%p\n%p\n%p", @1,@2,@3,@4);
+//    NSLog(@"\n%@\n%@", [@1 class], [@2378623423436282374 class]);
+//
+//    NSLog(@"%@", [@"abd" class]);
+//    NSLog(@"%@", [[NSString stringWithFormat:@"abcde"] class]);
+//    NSLog(@"%@", [[NSString stringWithFormat:@"abcdefghijk"] class]);
     
-    NSLog(@"\n %p \n %p\n %p", @"abcdefghijk", [NSString stringWithFormat:@"abc"], [NSString stringWithFormat:@"abc"]);
+    NSLog(@"%p", [NSString stringWithFormat: @"hdskfjhskjdfhkjsdhfksjdfhsdkjfsdkj"]);
+    NSLog(@"%p", [NSString stringWithFormat: @"hdskfjhskjdfhkjsdhfksjdfhsdkjfsdkj"]);
     
-    NSLog(@"%@", [@"abd" class]);
-    NSLog(@"%@", [[NSString stringWithFormat:@"abcde"] class]);
+    NSLog(@"%p", @373824234345);
+    NSLog(@"%p", [NSNumber numberWithInteger:373824234345]);
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
