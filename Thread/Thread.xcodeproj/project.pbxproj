@@ -18,6 +18,10 @@
 		AD40D93F24C1A3C5007EEAFF /* OSSpinLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD40D93E24C1A3C5007EEAFF /* OSSpinLockDemo.m */; };
 		AD40D94424C1AA70007EEAFF /* OSUnfairLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD40D94324C1AA70007EEAFF /* OSUnfairLockDemo.m */; };
 		AD40D94724C1B0C4007EEAFF /* PthreadMutexLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD40D94624C1B0C4007EEAFF /* PthreadMutexLockDemo.m */; };
+		AD4FD08724C53CEC00D9A809 /* SynchronizeDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4FD08624C53CEC00D9A809 /* SynchronizeDemo.m */; };
+		AD4FD08A24C5421000D9A809 /* AtomicDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4FD08924C5421000D9A809 /* AtomicDemo.m */; };
+		AD4FD08D24C54AC900D9A809 /* PthreadRwlockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4FD08C24C54AC900D9A809 /* PthreadRwlockDemo.m */; };
+		AD4FD09024C54FAF00D9A809 /* DispatchBarrierDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4FD08F24C54FAF00D9A809 /* DispatchBarrierDemo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +47,14 @@
 		AD40D94324C1AA70007EEAFF /* OSUnfairLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSUnfairLockDemo.m; sourceTree = "<group>"; };
 		AD40D94524C1B0C4007EEAFF /* PthreadMutexLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PthreadMutexLockDemo.h; sourceTree = "<group>"; };
 		AD40D94624C1B0C4007EEAFF /* PthreadMutexLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PthreadMutexLockDemo.m; sourceTree = "<group>"; };
+		AD4FD08524C53CEC00D9A809 /* SynchronizeDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynchronizeDemo.h; sourceTree = "<group>"; };
+		AD4FD08624C53CEC00D9A809 /* SynchronizeDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SynchronizeDemo.m; sourceTree = "<group>"; };
+		AD4FD08824C5421000D9A809 /* AtomicDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AtomicDemo.h; sourceTree = "<group>"; };
+		AD4FD08924C5421000D9A809 /* AtomicDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AtomicDemo.m; sourceTree = "<group>"; };
+		AD4FD08B24C54AC900D9A809 /* PthreadRwlockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PthreadRwlockDemo.h; sourceTree = "<group>"; };
+		AD4FD08C24C54AC900D9A809 /* PthreadRwlockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PthreadRwlockDemo.m; sourceTree = "<group>"; };
+		AD4FD08E24C54FAF00D9A809 /* DispatchBarrierDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchBarrierDemo.h; sourceTree = "<group>"; };
+		AD4FD08F24C54FAF00D9A809 /* DispatchBarrierDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchBarrierDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +103,14 @@
 				AD40D94324C1AA70007EEAFF /* OSUnfairLockDemo.m */,
 				AD40D94524C1B0C4007EEAFF /* PthreadMutexLockDemo.h */,
 				AD40D94624C1B0C4007EEAFF /* PthreadMutexLockDemo.m */,
+				AD4FD08524C53CEC00D9A809 /* SynchronizeDemo.h */,
+				AD4FD08624C53CEC00D9A809 /* SynchronizeDemo.m */,
+				AD4FD08824C5421000D9A809 /* AtomicDemo.h */,
+				AD4FD08924C5421000D9A809 /* AtomicDemo.m */,
+				AD4FD08B24C54AC900D9A809 /* PthreadRwlockDemo.h */,
+				AD4FD08C24C54AC900D9A809 /* PthreadRwlockDemo.m */,
+				AD4FD08E24C54FAF00D9A809 /* DispatchBarrierDemo.h */,
+				AD4FD08F24C54FAF00D9A809 /* DispatchBarrierDemo.m */,
 				AD3EA58D24C04531008BECCC /* Main.storyboard */,
 				AD3EA59024C04533008BECCC /* Assets.xcassets */,
 				AD3EA59224C04533008BECCC /* LaunchScreen.storyboard */,
@@ -170,14 +190,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD4FD09024C54FAF00D9A809 /* DispatchBarrierDemo.m in Sources */,
 				AD40D94424C1AA70007EEAFF /* OSUnfairLockDemo.m in Sources */,
 				AD3EA58C24C04531008BECCC /* ViewController.m in Sources */,
 				AD40D94724C1B0C4007EEAFF /* PthreadMutexLockDemo.m in Sources */,
 				AD40D93C24C1A29F007EEAFF /* LockBaseDemo.m in Sources */,
 				AD3EA58624C04531008BECCC /* AppDelegate.m in Sources */,
+				AD4FD08D24C54AC900D9A809 /* PthreadRwlockDemo.m in Sources */,
 				AD3EA59724C04533008BECCC /* main.m in Sources */,
 				AD3EA58924C04531008BECCC /* SceneDelegate.m in Sources */,
+				AD4FD08724C53CEC00D9A809 /* SynchronizeDemo.m in Sources */,
 				AD40D93F24C1A3C5007EEAFF /* OSSpinLockDemo.m in Sources */,
+				AD4FD08A24C5421000D9A809 /* AtomicDemo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,6 +20,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)unlock;
 
+- (void)saveMoney;
+
+- (void)saveMoneyByLock;
+
+- (void)outMoney;
+
+- (void)outMoneyByLock;
+
 @end
 
 NS_ASSUME_NONNULL_END

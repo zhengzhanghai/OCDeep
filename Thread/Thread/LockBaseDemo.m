@@ -75,43 +75,50 @@
     
     dispatch_async(queue, ^{
         for (int i = 0; i < 100; i++) {
-            [self saveMoney];
+            [self saveMoneyByLock];
         }
     });
     
     dispatch_async(queue, ^{
         for (int i = 0; i < 100; i++) {
-            [self outMoney];
+            [self outMoneyByLock];
         }
     });
 }
 
 /// 存钱
-- (void)saveMoney {
+- (void)saveMoneyByLock {
     [self lock];
     
+    [self saveMoney];
+    
+    [self unlock];
+}
+
+- (void)saveMoney {
     int _money = self.money;
     sleep(.2);
     _money += 1;
     self.money = _money;
     
     NSLog(@"剩余的钱：  %d", self.money);
+}
+
+/// 取钱
+- (void)outMoneyByLock {
+    [self lock];
+    
+    [self outMoney];
     
     [self unlock];
 }
 
-/// 取钱
 - (void)outMoney {
-    [self lock];
-    
     int _money = self.money;
     sleep(.2);
     _money -= 1;
     self.money = _money;
     
     NSLog(@"剩余的钱：  %d", self.money);
-    
-    [self unlock];
 }
-
 @end
