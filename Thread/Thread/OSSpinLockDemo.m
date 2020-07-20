@@ -17,14 +17,14 @@
 
 @implementation OSSpinLockDemo
 
-- (void)lock {
+- (void)lockThread {
     if (_lock == nil) {
         _lock = OS_SPINLOCK_INIT;
     }
     OSSpinLockLock(&_lock);
 }
 
-- (void)unlock {
+- (void)unlockThread {
     OSSpinLockUnlock(&_lock);
 }
 @end

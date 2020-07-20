@@ -24,11 +24,11 @@
     return self;
 }
 
-- (void)lock {
+- (void)lockThread {
     os_unfair_lock_lock(&_lock);
 }
 
-- (void)unlock {
+- (void)unlockThread {
     os_unfair_lock_unlock(&_lock);
 }
 @end

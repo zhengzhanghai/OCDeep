@@ -10,6 +10,12 @@
 #import "OSSpinLockDemo.h"
 #import "OSUnfairLockDemo.h"
 #import "PthreadMutexLockDemo.h"
+#import "PthreadMutexLockDemo2.h"
+#import "PthreadMutexLockDemo3.h"
+#import "NSLockDemo.h"
+#import "NSConditionLockDemo.h"
+#import "SerialQueueDemo.h"
+#import "DispatchSemaphoreDemo.h"
 
 @interface ViewController ()
 
@@ -30,8 +36,13 @@
     
 //    [OSSpinLockDemo lockTest];
 //    [OSUnfairLockDemo lockTest];
-    [PthreadMutexLockDemo lockTest];
-
+//    [PthreadMutexLockDemo lockTest];
+//    [PthreadMutexLockDemo2 lockTest];
+//    [PthreadMutexLockDemo3 lockTest];
+//    [NSLockDemo lockTest];
+//    [NSConditionLockDemo lockTest];
+//    [SerialQueueDemo lockTest];
+    [DispatchSemaphoreDemo lockTest];
 }
 
 @end

@@ -23,13 +23,13 @@
     [self saveAndOutMoney];
 }
 
-- (void)lock {}
+- (void)lockThread {}
 
-- (void)unlock {}
+- (void)unlockThread {}
 
 
 - (void)saleTicket {
-    [self unlock];
+    [self unlockThread];
     
     int t = self.tickets;
     sleep(.2);
@@ -37,7 +37,7 @@
     self.tickets = t;
     NSLog(@"剩余的票 %d", self.tickets);
     
-    [self unlock];
+    [self unlockThread];
 }
 
 - (void)saleTickets {
@@ -88,7 +88,7 @@
 
 /// 存钱
 - (void)saveMoney {
-    [self lock];
+    [self lockThread];
     
     int _money = self.money;
     sleep(.2);
@@ -97,12 +97,12 @@
     
     NSLog(@"剩余的钱：  %d", self.money);
     
-    [self unlock];
+    [self unlockThread];
 }
 
 /// 取钱
 - (void)outMoney {
-    [self lock];
+    [self lockThread];
     
     int _money = self.money;
     sleep(.2);
@@ -111,7 +111,7 @@
     
     NSLog(@"剩余的钱：  %d", self.money);
     
-    [self unlock];
+    [self unlockThread];
 }
 
 @end

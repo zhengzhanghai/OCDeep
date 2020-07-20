@@ -18,6 +18,13 @@
 		AD40D93F24C1A3C5007EEAFF /* OSSpinLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD40D93E24C1A3C5007EEAFF /* OSSpinLockDemo.m */; };
 		AD40D94424C1AA70007EEAFF /* OSUnfairLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD40D94324C1AA70007EEAFF /* OSUnfairLockDemo.m */; };
 		AD40D94724C1B0C4007EEAFF /* PthreadMutexLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD40D94624C1B0C4007EEAFF /* PthreadMutexLockDemo.m */; };
+		ADBB7BFD24C26E4F00035D4F /* PthreadMutexLockDemo2.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBB7BFC24C26E4F00035D4F /* PthreadMutexLockDemo2.m */; };
+		ADBB7C0024C2E8C100035D4F /* PthreadMutexLockDemo3.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBB7BFF24C2E8C100035D4F /* PthreadMutexLockDemo3.m */; };
+		ADBB7C0324C2F03F00035D4F /* NSConditionLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBB7C0224C2F03F00035D4F /* NSConditionLockDemo.m */; };
+		ADBB7C0624C2F14100035D4F /* NSLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBB7C0524C2F14100035D4F /* NSLockDemo.m */; };
+		ADBB7C0924C3DC2700035D4F /* SerialQueueDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBB7C0824C3DC2700035D4F /* SerialQueueDemo.m */; };
+		ADBB7C0C24C3DED800035D4F /* DispatchSemaphoreDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBB7C0B24C3DED800035D4F /* DispatchSemaphoreDemo.m */; };
+		ADBB7C0F24C3E36A00035D4F /* SynchronizedDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBB7C0E24C3E36A00035D4F /* SynchronizedDemo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +50,20 @@
 		AD40D94324C1AA70007EEAFF /* OSUnfairLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSUnfairLockDemo.m; sourceTree = "<group>"; };
 		AD40D94524C1B0C4007EEAFF /* PthreadMutexLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PthreadMutexLockDemo.h; sourceTree = "<group>"; };
 		AD40D94624C1B0C4007EEAFF /* PthreadMutexLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PthreadMutexLockDemo.m; sourceTree = "<group>"; };
+		ADBB7BFB24C26E4F00035D4F /* PthreadMutexLockDemo2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PthreadMutexLockDemo2.h; sourceTree = "<group>"; };
+		ADBB7BFC24C26E4F00035D4F /* PthreadMutexLockDemo2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PthreadMutexLockDemo2.m; sourceTree = "<group>"; };
+		ADBB7BFE24C2E8C100035D4F /* PthreadMutexLockDemo3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PthreadMutexLockDemo3.h; sourceTree = "<group>"; };
+		ADBB7BFF24C2E8C100035D4F /* PthreadMutexLockDemo3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PthreadMutexLockDemo3.m; sourceTree = "<group>"; };
+		ADBB7C0124C2F03F00035D4F /* NSConditionLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSConditionLockDemo.h; sourceTree = "<group>"; };
+		ADBB7C0224C2F03F00035D4F /* NSConditionLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSConditionLockDemo.m; sourceTree = "<group>"; };
+		ADBB7C0424C2F14100035D4F /* NSLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSLockDemo.h; sourceTree = "<group>"; };
+		ADBB7C0524C2F14100035D4F /* NSLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSLockDemo.m; sourceTree = "<group>"; };
+		ADBB7C0724C3DC2700035D4F /* SerialQueueDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SerialQueueDemo.h; sourceTree = "<group>"; };
+		ADBB7C0824C3DC2700035D4F /* SerialQueueDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SerialQueueDemo.m; sourceTree = "<group>"; };
+		ADBB7C0A24C3DED800035D4F /* DispatchSemaphoreDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchSemaphoreDemo.h; sourceTree = "<group>"; };
+		ADBB7C0B24C3DED800035D4F /* DispatchSemaphoreDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchSemaphoreDemo.m; sourceTree = "<group>"; };
+		ADBB7C0D24C3E36A00035D4F /* SynchronizedDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynchronizedDemo.h; sourceTree = "<group>"; };
+		ADBB7C0E24C3E36A00035D4F /* SynchronizedDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SynchronizedDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +112,20 @@
 				AD40D94324C1AA70007EEAFF /* OSUnfairLockDemo.m */,
 				AD40D94524C1B0C4007EEAFF /* PthreadMutexLockDemo.h */,
 				AD40D94624C1B0C4007EEAFF /* PthreadMutexLockDemo.m */,
+				ADBB7BFB24C26E4F00035D4F /* PthreadMutexLockDemo2.h */,
+				ADBB7BFC24C26E4F00035D4F /* PthreadMutexLockDemo2.m */,
+				ADBB7BFE24C2E8C100035D4F /* PthreadMutexLockDemo3.h */,
+				ADBB7BFF24C2E8C100035D4F /* PthreadMutexLockDemo3.m */,
+				ADBB7C0124C2F03F00035D4F /* NSConditionLockDemo.h */,
+				ADBB7C0224C2F03F00035D4F /* NSConditionLockDemo.m */,
+				ADBB7C0424C2F14100035D4F /* NSLockDemo.h */,
+				ADBB7C0524C2F14100035D4F /* NSLockDemo.m */,
+				ADBB7C0724C3DC2700035D4F /* SerialQueueDemo.h */,
+				ADBB7C0824C3DC2700035D4F /* SerialQueueDemo.m */,
+				ADBB7C0A24C3DED800035D4F /* DispatchSemaphoreDemo.h */,
+				ADBB7C0B24C3DED800035D4F /* DispatchSemaphoreDemo.m */,
+				ADBB7C0D24C3E36A00035D4F /* SynchronizedDemo.h */,
+				ADBB7C0E24C3E36A00035D4F /* SynchronizedDemo.m */,
 				AD3EA58D24C04531008BECCC /* Main.storyboard */,
 				AD3EA59024C04533008BECCC /* Assets.xcassets */,
 				AD3EA59224C04533008BECCC /* LaunchScreen.storyboard */,
@@ -170,12 +205,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADBB7BFD24C26E4F00035D4F /* PthreadMutexLockDemo2.m in Sources */,
 				AD40D94424C1AA70007EEAFF /* OSUnfairLockDemo.m in Sources */,
 				AD3EA58C24C04531008BECCC /* ViewController.m in Sources */,
+				ADBB7C0924C3DC2700035D4F /* SerialQueueDemo.m in Sources */,
 				AD40D94724C1B0C4007EEAFF /* PthreadMutexLockDemo.m in Sources */,
+				ADBB7C0024C2E8C100035D4F /* PthreadMutexLockDemo3.m in Sources */,
+				ADBB7C0F24C3E36A00035D4F /* SynchronizedDemo.m in Sources */,
 				AD40D93C24C1A29F007EEAFF /* LockBaseDemo.m in Sources */,
+				ADBB7C0624C2F14100035D4F /* NSLockDemo.m in Sources */,
 				AD3EA58624C04531008BECCC /* AppDelegate.m in Sources */,
 				AD3EA59724C04533008BECCC /* main.m in Sources */,
+				ADBB7C0324C2F03F00035D4F /* NSConditionLockDemo.m in Sources */,
+				ADBB7C0C24C3DED800035D4F /* DispatchSemaphoreDemo.m in Sources */,
 				AD3EA58924C04531008BECCC /* SceneDelegate.m in Sources */,
 				AD40D93F24C1A3C5007EEAFF /* OSSpinLockDemo.m in Sources */,
 			);
@@ -320,6 +362,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3BCAF5M7TY;
 				INFOPLIST_FILE = Thread/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -337,6 +380,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3BCAF5M7TY;
 				INFOPLIST_FILE = Thread/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -16,9 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)lockTest;
 
-- (void)lock;
+- (void)lockThread;
 
-- (void)unlock;
+- (void)unlockThread;
 
 @end
 
