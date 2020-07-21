@@ -21,55 +21,36 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    [self dispatchSourceTest];
     
+//    NSString *ssss = [NSString stringWithFormat:@"开始觉得很疯狂水电费考试大纲后方可第三方kjsdgfk"];
+//    NSLog(@"%p", ssss);
+//    NSLog(@"%p", [ssss copy]);
 //
-//    NSObject *obj1 = [[NSObject alloc] init];
-//    NSObject *obj2 = [[NSObject alloc] init];
-//
-//    int a;
-//    int b;
-//
-//    NSLog(@"%p", obj1);
-//    NSLog(@"%p", obj2);
-//    NSLog(@"%p", &a);
-//    NSLog(@"%p", &b);
+//    NSMutableString *muStr = [NSMutableString stringWithFormat:@"快速点击回复客家话水电费扣水电费更好看坚实的股份"];
+//    NSLog(@"%p", muStr);
+//    NSLog(@"%p", [muStr mutableCopy]);
     
-    for (int i = 0; i < 100; i++) {
-        dispatch_async(dispatch_get_global_queue(0, 0), ^{
-            self.name = [NSString stringWithFormat:@"abcdefghijk"];
-            self.name = @"abcdefghijk";
-            self.name = [NSString stringWithFormat:@"oooooooooooo"];
-        });
-    }
+//    NSArray *arr = @[@"1"];
+//    NSArray *arr1 = [NSArray arrayWithObject:@"1"];
+//    NSArray *arr2 = [NSMutableArray arrayWithObject:@"1"];
+//    NSArray *arr3 = [NSMutableArray arrayWithObject:@"1"];
+//
+//    NSLog(@"%p", arr);
+//    NSLog(@"%p", arr1);
+//    NSLog(@"%p", arr2);
+//    NSLog(@"%p", arr3);
     
-//
-//    NSLog(@"\n%p\n%p\n%p\n%p\n%p\n%p\n%p",
-//          @"abc",
-//          @"sdkjfhsakdjfhasdkjflasdfgdsfgdsafgafkdhjsghaj",
-//          @"abcdefghijk",
-//          [NSString stringWithFormat:@"abcd"],
-//          [NSString stringWithFormat:@"abcsjdkfhkssdfkhjsdhfkj"],
-//          [NSString stringWithFormat:@"kjsdgjgasdfoewiuskjdkjgsjhgkjhgsdkjfhgsdkjfsdfhjkg"],
-//          @"kjsdgjgasdfoewiuskjdkjgsjhgkjhgsdkjfhgsdkjfsdfhjkg");
-//
-//    NSLog(@"-------------------------------------");
-//
-//    NSString *str = [NSString stringWithFormat:@"kjsdgjgasdfoewiuskjdkjgsjhgkjhgsdkjfhgsdkjfsdfhjkg"];
-//    NSLog(@"%p", [str UTF8String]);
-//
-//    NSLog(@"\n%p\n%p\n%p\n%p", @1,@2,@3,@4);
-//    NSLog(@"\n%@\n%@", [@1 class], [@2378623423436282374 class]);
-//
-//    NSLog(@"%@", [@"abd" class]);
-//    NSLog(@"%@", [[NSString stringWithFormat:@"abcde"] class]);
-//    NSLog(@"%@", [[NSString stringWithFormat:@"abcdefghijk"] class]);
+//    NSString *str1 = [NSString stringWithFormat:@"1世纪东方海口市反馈的说法"];
+//    NSLog(@"%zd", str1.retainCount);
+//    NSString *str2 = [str1 copy];
+//    NSLog(@"%zd", str1.retainCount);
     
-    NSLog(@"%p", [NSString stringWithFormat: @"hdskfjhskjdfhkjsdhfksjdfhsdkjfsdkj"]);
-    NSLog(@"%p", [NSString stringWithFormat: @"hdskfjhskjdfhkjsdhfksjdfhsdkjfsdkj"]);
+    NSArray *arr1 = [NSArray arrayWithObjects:@"1",@"3",@"3", nil];
+    NSArray *arr2 = [arr1 copy];
     
-    NSLog(@"%p", @373824234345);
-    NSLog(@"%p", [NSNumber numberWithInteger:373824234345]);
+    NSLog(@"%p", arr1);
+    NSLog(@"%p", arr2);
+    
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -92,6 +73,58 @@
     });
     
     dispatch_resume(_timer);
+}
+
+- (void)test {
+    //    [self dispatchSourceTest];
+        
+    //
+    //    NSObject *obj1 = [[NSObject alloc] init];
+    //    NSObject *obj2 = [[NSObject alloc] init];
+    //
+    //    int a;
+    //    int b;
+    //
+    //    NSLog(@"%p", obj1);
+    //    NSLog(@"%p", obj2);
+    //    NSLog(@"%p", &a);
+    //    NSLog(@"%p", &b);
+        
+    //    for (int i = 0; i < 100; i++) {
+    //        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+    //            self.name = [NSString stringWithFormat:@"abcdefghijk"];
+    //            self.name = @"abcdefghijk";
+    //            self.name = [NSString stringWithFormat:@"oooooooooooo"];
+    //        });
+    //    }
+        
+    //
+    //    NSLog(@"\n%p\n%p\n%p\n%p\n%p\n%p\n%p",
+    //          @"abc",
+    //          @"sdkjfhsakdjfhasdkjflasdfgdsfgdsafgafkdhjsghaj",
+    //          @"abcdefghijk",
+    //          [NSString stringWithFormat:@"abcd"],
+    //          [NSString stringWithFormat:@"abcsjdkfhkssdfkhjsdhfkj"],
+    //          [NSString stringWithFormat:@"kjsdgjgasdfoewiuskjdkjgsjhgkjhgsdkjfhgsdkjfsdfhjkg"],
+    //          @"kjsdgjgasdfoewiuskjdkjgsjhgkjhgsdkjfhgsdkjfsdfhjkg");
+    //
+    //    NSLog(@"-------------------------------------");
+    //
+    //    NSString *str = [NSString stringWithFormat:@"kjsdgjgasdfoewiuskjdkjgsjhgkjhgsdkjfhgsdkjfsdfhjkg"];
+    //    NSLog(@"%p", [str UTF8String]);
+    //
+    //    NSLog(@"\n%p\n%p\n%p\n%p", @1,@2,@3,@4);
+    //    NSLog(@"\n%@\n%@", [@1 class], [@2378623423436282374 class]);
+    //
+    //    NSLog(@"%@", [@"abd" class]);
+    //    NSLog(@"%@", [[NSString stringWithFormat:@"abcde"] class]);
+    //    NSLog(@"%@", [[NSString stringWithFormat:@"abcdefghijk"] class]);
+        
+    //    NSLog(@"%p", [NSString stringWithFormat: @"hdskfjhskjdfhkjsdhfksjdfhsdkjfsdkj"]);
+    //    NSLog(@"%p", [NSString stringWithFormat: @"hdskfjhskjdfhkjsdhfksjdfhsdkjfsdkj"]);
+    //
+    //    NSLog(@"%p", @373824234345);
+    //    NSLog(@"%p", [NSNumber numberWithInteger:373824234345]);
 }
 
 @end
