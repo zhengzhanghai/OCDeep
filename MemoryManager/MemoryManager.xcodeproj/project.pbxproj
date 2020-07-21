@@ -35,6 +35,7 @@
 		AD2AC4F124C5785D0090C5CF /* CADisplayLinkTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADisplayLinkTestViewController.m; sourceTree = "<group>"; };
 		AD2AC4F324C579090090C5CF /* NSTimeTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTimeTestViewController.h; sourceTree = "<group>"; };
 		AD2AC4F424C579090090C5CF /* NSTimeTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimeTestViewController.m; sourceTree = "<group>"; };
+		ADBB7C1024C72B8800035D4F /* MJClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJClassInfo.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +52,7 @@
 		AD2AC4CB24C576C20090C5CF = {
 			isa = PBXGroup;
 			children = (
+				ADBB7C1024C72B8800035D4F /* MJClassInfo.h */,
 				AD2AC4D624C576C20090C5CF /* MemoryManager */,
 				AD2AC4D524C576C20090C5CF /* Products */,
 			);
