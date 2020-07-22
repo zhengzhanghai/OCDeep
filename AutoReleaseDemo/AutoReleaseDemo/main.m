@@ -9,19 +9,23 @@
 #import <Foundation/Foundation.h>
 #import "Person.h"
 
+extern void _objc_autoreleasePoolPrint(void);
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        NSMutableArray *array = [NSMutableArray array];
+//        for (int i = 0; i < 550; i++) {
+//            [[[Person alloc] init] autorelease];
+//        }
         
-        for (int i = 0; i < 100; i ++) {
-            NSLog(@"----   %@", [array valueForKey:@"capacity"]);
-            [array addObject:@"1"];
-        }
-
         
+        Person *person = [[[Person alloc] init] autorelease];
+        [person autorelease];
+        [person retain];
+        _objc_autoreleasePoolPrint();
         
     }
+    
     
  
     
